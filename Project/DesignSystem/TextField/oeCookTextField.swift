@@ -18,9 +18,9 @@ struct oeCookTextField: View {
 
     private var borderColor: Color {
         if isError {
-            return //ExpoColor.error.swiftUIColor
+            return .red
         } else {
-            return //ExpoColor.gray100.swiftUIColor
+            return .gray
         }
     }
 

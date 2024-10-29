@@ -19,6 +19,8 @@
 		EA5682AE2CD0C816006C74FA /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A32CD0C816006C74FA /* Pretendard-Light.otf */; };
 		EA5682AF2CD0C816006C74FA /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56829F2CD0C816006C74FA /* Pretendard-Black.otf */; };
 		EA5682B02CD0C816006C74FA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A02CD0C816006C74FA /* Pretendard-Bold.otf */; };
+		EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B22CD0C860006C74FA /* DesignModifire.swift */; };
+		EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B42CD0C939006C74FA /* DesignTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		EA5682A52CD0C816006C74FA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		EA5682A62CD0C816006C74FA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		EA5682A72CD0C816006C74FA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		EA5682B22CD0C860006C74FA /* DesignModifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignModifire.swift; sourceTree = "<group>"; };
+		EA5682B42CD0C939006C74FA /* DesignTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		EA5682982CD0BFE9006C74FA /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				EA5682B12CD0C85B006C74FA /* DesignModifire */,
 				EA56829A2CD0C02E006C74FA /* TextField */,
 			);
 			path = DesignSystem;
@@ -180,6 +185,15 @@
 				EA5682A72CD0C816006C74FA /* Pretendard-Thin.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		EA5682B12CD0C85B006C74FA /* DesignModifire */ = {
+			isa = PBXGroup;
+			children = (
+				EA5682B22CD0C860006C74FA /* DesignModifire.swift */,
+				EA5682B42CD0C939006C74FA /* DesignTestView.swift */,
+			);
+			path = DesignModifire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */,
 				EA5682682CD0BEB3006C74FA /* oeCookApp.swift in Sources */,
 				EA56829D2CD0C04E006C74FA /* oeCookTextField.swift in Sources */,
+				EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"oeCook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7DAQAFQ2TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -517,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"oeCook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7DAQAFQ2TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
