@@ -12,14 +12,16 @@ struct WebViewTestView: View {
         NavigationStack {
             NavigationLink(destination: MyWebView(urlToLoad: "https://google.com")) {
                 Text("Dotori")
-                    //.edgesIgnoringSafeArea(.all)
                     .padding()
                     .background(Color.green)
                     .foregroundColor(.black)
                     .cornerRadius(20, antialiased: true)
                     .ignoresSafeArea()
+
+                Text("테스트")
+                    .foregroundStyle(AppColor.dark)
+                    .oeCook(.medium, size: 10)
             }
-            .navigationBarBackButtonHidden()
         }
     }
 }

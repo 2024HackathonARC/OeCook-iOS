@@ -14,13 +14,14 @@ struct oeCookTextField: View {
     var placeholder: String
     var errorText: String
     var isError: Bool
+    var isDisabled: Bool
     var onSubmit: () -> Void
 
     private var borderColor: Color {
         if isError {
             return .red
         } else {
-            return .gray
+            return .gray100
         }
     }
 
@@ -30,6 +31,7 @@ struct oeCookTextField: View {
         title: String = "",
         errorText: String = "",
         isError: Bool = false,
+        isDisabled: Bool = false,
         onSubmit: @escaping () -> Void = {}
     ) {
         self._text = text
@@ -37,6 +39,7 @@ struct oeCookTextField: View {
         self.title = title
         self.errorText = errorText
         self.isError = isError
+        self.isDisabled = isDisabled
         self.onSubmit = onSubmit
     }
 
@@ -44,8 +47,8 @@ struct oeCookTextField: View {
         VStack(alignment: .leading, spacing: 4) {
             if !title.isEmpty {
                 Text(title)
-                    //.expoFont(.body2B)
-                    //.expoColor(ExpoColor.black)
+                    .oeCook(.semibold, size: 16)
+                    .oeCookColor(.black)
             }
 
             TextField(placeholder, text: $text)
@@ -54,20 +57,23 @@ struct oeCookTextField: View {
                 .onSubmit(onSubmit)
                 .focused($isFocused)
                 //.expoColor(ExpoColor.black)
-                //.expoFont(.caption1R)
+                .disabled(isDisabled)
+                .oeCook(.regular, size: 14)
                 .overlay {
                     RoundedRectangle(cornerRadius: 8)
                         .strokeBorder(borderColor)
                 }
                 .cornerRadius(8)
                 .onTapGesture {
-                    isFocused = true
+                    if !isDisabled { isFocused = true }
                 }
+                .padding(.top, 7)
 
             if isError {
                 Text(errorText)
-                    //.expoColor(ExpoColor.error)
-                    //.expoFont(.caption2R)
+                    .oeCookColor(Color.red)
+                    .oeCook(.regular, size: 12)
+                    .padding(.top, 3)
             }
         }
         .padding(.horizontal, 16)

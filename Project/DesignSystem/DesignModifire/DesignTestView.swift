@@ -10,12 +10,15 @@ import SwiftUI
 struct DesignTestView: View {
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .onCook(.medium, size: 30)
-                .padding()
 
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .onCook(.semibold, size: 30)
+            Text("안녕하세요!")
+                .oeCook(.semibold, size: 30)
+
+            Text("안녕하세요!")
+                .oeCook(.bold, size: 30)
+
+            Text("안녕하세요!")
+                .oeCook(.thin, size: 30)
         }
     }
 }

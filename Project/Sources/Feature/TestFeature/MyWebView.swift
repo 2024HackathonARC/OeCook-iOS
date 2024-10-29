@@ -26,3 +26,12 @@ struct MyWebView: UIViewRepresentable {
 
     }
 }
+
+struct MyWebViewContainer: View {
+    var urlToLoad: String
+
+    var body: some View {
+        MyWebView(urlToLoad: urlToLoad)
+            .navigationBarBackButtonHidden(true) // Hide the back button
+    }
+}

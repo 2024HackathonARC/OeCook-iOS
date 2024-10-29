@@ -10,19 +10,24 @@
 		EA5682682CD0BEB3006C74FA /* oeCookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682672CD0BEB3006C74FA /* oeCookApp.swift */; };
 		EA56826C2CD0BEB5006C74FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA56826B2CD0BEB5006C74FA /* Assets.xcassets */; };
 		EA56829D2CD0C04E006C74FA /* oeCookTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA56829C2CD0C048006C74FA /* oeCookTextField.swift */; };
-		EA5682A82CD0C816006C74FA /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A12CD0C816006C74FA /* Pretendard-ExtraBold.otf */; };
-		EA5682A92CD0C816006C74FA /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A42CD0C816006C74FA /* Pretendard-Medium.otf */; };
-		EA5682AA2CD0C816006C74FA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A62CD0C816006C74FA /* Pretendard-SemiBold.otf */; };
-		EA5682AB2CD0C816006C74FA /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A72CD0C816006C74FA /* Pretendard-Thin.otf */; };
-		EA5682AC2CD0C816006C74FA /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A22CD0C816006C74FA /* Pretendard-ExtraLight.otf */; };
-		EA5682AD2CD0C816006C74FA /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A52CD0C816006C74FA /* Pretendard-Regular.otf */; };
-		EA5682AE2CD0C816006C74FA /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A32CD0C816006C74FA /* Pretendard-Light.otf */; };
-		EA5682AF2CD0C816006C74FA /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56829F2CD0C816006C74FA /* Pretendard-Black.otf */; };
-		EA5682B02CD0C816006C74FA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A02CD0C816006C74FA /* Pretendard-Bold.otf */; };
 		EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B22CD0C860006C74FA /* DesignModifire.swift */; };
 		EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B42CD0C939006C74FA /* DesignTestView.swift */; };
 		EA5682B72CD0CECE006C74FA /* WebViewTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */; };
 		EA5682B92CD0CF0C006C74FA /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B82CD0CEFF006C74FA /* MyWebView.swift */; };
+		EA5682BD2CD0D6EB006C74FA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682BC2CD0D6EB006C74FA /* SignInView.swift */; };
+		EA5682C22CD0F30B006C74FA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682C12CD0F30B006C74FA /* SignUpView.swift */; };
+		EA5683832CD0FF1C006C74FA /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837C2CD0FF1C006C74FA /* Pretendard-ExtraBold.otf */; };
+		EA5683842CD0FF1C006C74FA /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837E2CD0FF1C006C74FA /* Pretendard-Light.otf */; };
+		EA5683852CD0FF1C006C74FA /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5683802CD0FF1C006C74FA /* Pretendard-Regular.otf */; };
+		EA5683862CD0FF1C006C74FA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5683812CD0FF1C006C74FA /* Pretendard-SemiBold.otf */; };
+		EA5683872CD0FF1C006C74FA /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5683822CD0FF1C006C74FA /* Pretendard-Thin.otf */; };
+		EA5683882CD0FF1C006C74FA /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837D2CD0FF1C006C74FA /* Pretendard-ExtraLight.otf */; };
+		EA5683892CD0FF1C006C74FA /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837F2CD0FF1C006C74FA /* Pretendard-Medium.otf */; };
+		EA56838A2CD0FF1C006C74FA /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837A2CD0FF1C006C74FA /* Pretendard-Black.otf */; };
+		EA56838B2CD0FF1C006C74FA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837B2CD0FF1C006C74FA /* Pretendard-Bold.otf */; };
+		EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA56838C2CD10211006C74FA /* SignUpViewModel.swift */; };
+		EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5683912CD11CE6006C74FA /* oeCookButton.swift */; };
+		EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,19 +54,25 @@
 		EA5682742CD0BEB5006C74FA /* oeCookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oeCookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA56827E2CD0BEB5006C74FA /* oeCookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oeCookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA56829C2CD0C048006C74FA /* oeCookTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oeCookTextField.swift; sourceTree = "<group>"; };
-		EA56829F2CD0C816006C74FA /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
-		EA5682A02CD0C816006C74FA /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
-		EA5682A12CD0C816006C74FA /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
-		EA5682A22CD0C816006C74FA /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
-		EA5682A32CD0C816006C74FA /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
-		EA5682A42CD0C816006C74FA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		EA5682A52CD0C816006C74FA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		EA5682A62CD0C816006C74FA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		EA5682A72CD0C816006C74FA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		EA5682B22CD0C860006C74FA /* DesignModifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignModifire.swift; sourceTree = "<group>"; };
 		EA5682B42CD0C939006C74FA /* DesignTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTestView.swift; sourceTree = "<group>"; };
 		EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestView.swift; sourceTree = "<group>"; };
 		EA5682B82CD0CEFF006C74FA /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		EA5682BC2CD0D6EB006C74FA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EA5682C12CD0F30B006C74FA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EA5683672CD0FE2F006C74FA /* oeCook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "oeCook-Info.plist"; sourceTree = "<group>"; };
+		EA56837A2CD0FF1C006C74FA /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Black.otf"; sourceTree = "<absolute>"; };
+		EA56837B2CD0FF1C006C74FA /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Bold.otf"; sourceTree = "<absolute>"; };
+		EA56837C2CD0FF1C006C74FA /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-ExtraBold.otf"; sourceTree = "<absolute>"; };
+		EA56837D2CD0FF1C006C74FA /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-ExtraLight.otf"; sourceTree = "<absolute>"; };
+		EA56837E2CD0FF1C006C74FA /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Light.otf"; sourceTree = "<absolute>"; };
+		EA56837F2CD0FF1C006C74FA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Medium.otf"; sourceTree = "<absolute>"; };
+		EA5683802CD0FF1C006C74FA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Regular.otf"; sourceTree = "<absolute>"; };
+		EA5683812CD0FF1C006C74FA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-SemiBold.otf"; sourceTree = "<absolute>"; };
+		EA5683822CD0FF1C006C74FA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Thin.otf"; sourceTree = "<absolute>"; };
+		EA56838C2CD10211006C74FA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		EA5683912CD11CE6006C74FA /* oeCookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oeCookButton.swift; sourceTree = "<group>"; };
+		EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +103,7 @@
 		EA56825B2CD0BEB3006C74FA = {
 			isa = PBXGroup;
 			children = (
+				EA5683672CD0FE2F006C74FA /* oeCook-Info.plist */,
 				EA5682922CD0BF6A006C74FA /* Project */,
 				EA5682652CD0BEB3006C74FA /* Products */,
 			);
@@ -110,10 +122,9 @@
 		EA5682922CD0BF6A006C74FA /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				EA5682992CD0BFFB006C74FA /* Domain */,
+				EA5682932CD0BF72006C74FA /* Resources */,
 				EA5682982CD0BFE9006C74FA /* DesignSystem */,
 				EA5682952CD0BFAA006C74FA /* Sources */,
-				EA5682932CD0BF72006C74FA /* Resources */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -147,8 +158,9 @@
 		EA5682972CD0BFE0006C74FA /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				EA5682B82CD0CEFF006C74FA /* MyWebView.swift */,
-				EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */,
+				EA5682BF2CD0F2F9006C74FA /* SignUpFeature */,
+				EA5682BE2CD0D6F1006C74FA /* TestFeature */,
+				EA5682BA2CD0D6D6006C74FA /* SignInFeature */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -156,17 +168,11 @@
 		EA5682982CD0BFE9006C74FA /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				EA56838E2CD11CD2006C74FA /* Button */,
 				EA5682B12CD0C85B006C74FA /* DesignModifire */,
 				EA56829A2CD0C02E006C74FA /* TextField */,
 			);
 			path = DesignSystem;
-			sourceTree = "<group>";
-		};
-		EA5682992CD0BFFB006C74FA /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		EA56829A2CD0C02E006C74FA /* TextField */ = {
@@ -180,15 +186,15 @@
 		EA56829E2CD0C7FD006C74FA /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				EA56829F2CD0C816006C74FA /* Pretendard-Black.otf */,
-				EA5682A02CD0C816006C74FA /* Pretendard-Bold.otf */,
-				EA5682A12CD0C816006C74FA /* Pretendard-ExtraBold.otf */,
-				EA5682A22CD0C816006C74FA /* Pretendard-ExtraLight.otf */,
-				EA5682A32CD0C816006C74FA /* Pretendard-Light.otf */,
-				EA5682A42CD0C816006C74FA /* Pretendard-Medium.otf */,
-				EA5682A52CD0C816006C74FA /* Pretendard-Regular.otf */,
-				EA5682A62CD0C816006C74FA /* Pretendard-SemiBold.otf */,
-				EA5682A72CD0C816006C74FA /* Pretendard-Thin.otf */,
+				EA56837A2CD0FF1C006C74FA /* Pretendard-Black.otf */,
+				EA56837B2CD0FF1C006C74FA /* Pretendard-Bold.otf */,
+				EA56837C2CD0FF1C006C74FA /* Pretendard-ExtraBold.otf */,
+				EA56837D2CD0FF1C006C74FA /* Pretendard-ExtraLight.otf */,
+				EA56837E2CD0FF1C006C74FA /* Pretendard-Light.otf */,
+				EA56837F2CD0FF1C006C74FA /* Pretendard-Medium.otf */,
+				EA5683802CD0FF1C006C74FA /* Pretendard-Regular.otf */,
+				EA5683812CD0FF1C006C74FA /* Pretendard-SemiBold.otf */,
+				EA5683822CD0FF1C006C74FA /* Pretendard-Thin.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -200,6 +206,57 @@
 				EA5682B42CD0C939006C74FA /* DesignTestView.swift */,
 			);
 			path = DesignModifire;
+			sourceTree = "<group>";
+		};
+		EA5682BA2CD0D6D6006C74FA /* SignInFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EA5682BB2CD0D6DF006C74FA /* Sources */,
+			);
+			path = SignInFeature;
+			sourceTree = "<group>";
+		};
+		EA5682BB2CD0D6DF006C74FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA5682BC2CD0D6EB006C74FA /* SignInView.swift */,
+				EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EA5682BE2CD0D6F1006C74FA /* TestFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EA5682B82CD0CEFF006C74FA /* MyWebView.swift */,
+				EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */,
+			);
+			path = TestFeature;
+			sourceTree = "<group>";
+		};
+		EA5682BF2CD0F2F9006C74FA /* SignUpFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EA5682C02CD0F300006C74FA /* Sources */,
+			);
+			path = SignUpFeature;
+			sourceTree = "<group>";
+		};
+		EA5682C02CD0F300006C74FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA56838C2CD10211006C74FA /* SignUpViewModel.swift */,
+				EA5682C12CD0F30B006C74FA /* SignUpView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EA56838E2CD11CD2006C74FA /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EA5683912CD11CE6006C74FA /* oeCookButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,15 +370,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5682A82CD0C816006C74FA /* Pretendard-ExtraBold.otf in Resources */,
-				EA5682A92CD0C816006C74FA /* Pretendard-Medium.otf in Resources */,
-				EA5682AA2CD0C816006C74FA /* Pretendard-SemiBold.otf in Resources */,
-				EA5682AB2CD0C816006C74FA /* Pretendard-Thin.otf in Resources */,
-				EA5682AC2CD0C816006C74FA /* Pretendard-ExtraLight.otf in Resources */,
-				EA5682AD2CD0C816006C74FA /* Pretendard-Regular.otf in Resources */,
-				EA5682AE2CD0C816006C74FA /* Pretendard-Light.otf in Resources */,
-				EA5682AF2CD0C816006C74FA /* Pretendard-Black.otf in Resources */,
-				EA5682B02CD0C816006C74FA /* Pretendard-Bold.otf in Resources */,
+				EA5683832CD0FF1C006C74FA /* Pretendard-ExtraBold.otf in Resources */,
+				EA5683842CD0FF1C006C74FA /* Pretendard-Light.otf in Resources */,
+				EA5683852CD0FF1C006C74FA /* Pretendard-Regular.otf in Resources */,
+				EA5683862CD0FF1C006C74FA /* Pretendard-SemiBold.otf in Resources */,
+				EA5683872CD0FF1C006C74FA /* Pretendard-Thin.otf in Resources */,
+				EA5683882CD0FF1C006C74FA /* Pretendard-ExtraLight.otf in Resources */,
+				EA5683892CD0FF1C006C74FA /* Pretendard-Medium.otf in Resources */,
+				EA56838A2CD0FF1C006C74FA /* Pretendard-Black.otf in Resources */,
+				EA56838B2CD0FF1C006C74FA /* Pretendard-Bold.otf in Resources */,
 				EA56826C2CD0BEB5006C74FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +405,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */,
+				EA5682BD2CD0D6EB006C74FA /* SignInView.swift in Sources */,
 				EA5682B92CD0CF0C006C74FA /* MyWebView.swift in Sources */,
 				EA5682682CD0BEB3006C74FA /* oeCookApp.swift in Sources */,
+				EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */,
+				EA5682C22CD0F30B006C74FA /* SignUpView.swift in Sources */,
 				EA56829D2CD0C04E006C74FA /* oeCookTextField.swift in Sources */,
+				EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */,
+				EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */,
 				EA5682B72CD0CECE006C74FA /* WebViewTestView.swift in Sources */,
 				EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */,
 			);
@@ -516,6 +578,7 @@
 				DEVELOPMENT_TEAM = 7DAQAFQ2TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "oeCook-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -545,6 +608,7 @@
 				DEVELOPMENT_TEAM = 7DAQAFQ2TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "oeCook-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
