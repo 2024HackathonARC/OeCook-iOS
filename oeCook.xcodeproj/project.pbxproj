@@ -21,6 +21,8 @@
 		EA5682B02CD0C816006C74FA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5682A02CD0C816006C74FA /* Pretendard-Bold.otf */; };
 		EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B22CD0C860006C74FA /* DesignModifire.swift */; };
 		EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B42CD0C939006C74FA /* DesignTestView.swift */; };
+		EA5682B72CD0CECE006C74FA /* WebViewTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */; };
+		EA5682B92CD0CF0C006C74FA /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5682B82CD0CEFF006C74FA /* MyWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		EA5682A72CD0C816006C74FA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		EA5682B22CD0C860006C74FA /* DesignModifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignModifire.swift; sourceTree = "<group>"; };
 		EA5682B42CD0C939006C74FA /* DesignTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTestView.swift; sourceTree = "<group>"; };
+		EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestView.swift; sourceTree = "<group>"; };
+		EA5682B82CD0CEFF006C74FA /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		EA5682972CD0BFE0006C74FA /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA5682B82CD0CEFF006C74FA /* MyWebView.swift */,
+				EA5682B62CD0CECE006C74FA /* WebViewTestView.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -342,8 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */,
+				EA5682B92CD0CF0C006C74FA /* MyWebView.swift in Sources */,
 				EA5682682CD0BEB3006C74FA /* oeCookApp.swift in Sources */,
 				EA56829D2CD0C04E006C74FA /* oeCookTextField.swift in Sources */,
+				EA5682B72CD0CECE006C74FA /* WebViewTestView.swift in Sources */,
 				EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
