@@ -11,7 +11,7 @@ import SwiftUI
 struct oeCookApp: App {
     var body: some Scene {
         WindowGroup {
-            WebViewTestView()
+            SignInView(viewModel: SignInViewModel())
         }
     }
 }

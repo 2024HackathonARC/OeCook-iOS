@@ -11,7 +11,7 @@ struct SignUpView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject var viewModel: SignUpViewModel
     @State private var showError: Bool = false
-    let students = ["한국어", "English", "中国人", "日本語"]
+    let languag = ["한국어", "English", "中国人", "日本語", "Русский", "ภาษาไทย", "français"]
     @State private var selectedColor = ""
     @State var language = ""
     @State private var showPicker = false
@@ -95,7 +95,7 @@ struct SignUpView: View {
                         }
                 }
 
-                Text("알레르기")
+                Text("알레르기를 선택해주세요.")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .oeCook(.semibold, size: 16)
                     .padding(.leading, 16)
@@ -122,7 +122,7 @@ struct SignUpView: View {
                 .padding(.top, 10)
 
 
-                Text("비건")
+                Text("비건이신가요?")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .oeCook(.semibold, size: 16)
                     .padding(.leading, 16)
@@ -145,7 +145,7 @@ struct SignUpView: View {
                 }
                 .padding(.top, 10)
 
-                Text("할랄")
+                Text("할랄 인증이 필요하신가요?")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .oeCook(.semibold, size: 16)
                     .padding(.leading, 16)
@@ -196,9 +196,9 @@ struct SignUpView: View {
             .sheet(isPresented: $showPicker) {
                 VStack {
                     Picker("원하는 색을 골라주세요", selection: $selectedColor) {
-                        ForEach(students, id: \.self) { student in
-                            Text(student)
-                                .tag(student)
+                        ForEach(languag, id: \.self) { languags in
+                            Text(languags)
+                                .tag(languags)
                         }
                     }
                     .pickerStyle(WheelPickerStyle())  // 휠 스타일의 Picker 사용

@@ -27,6 +27,7 @@
 		EA56838B2CD0FF1C006C74FA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837B2CD0FF1C006C74FA /* Pretendard-Bold.otf */; };
 		EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA56838C2CD10211006C74FA /* SignUpViewModel.swift */; };
 		EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5683912CD11CE6006C74FA /* oeCookButton.swift */; };
+		EAC20EB42CD1B95200C9C293 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC20EB32CD1B95200C9C293 /* RecipeView.swift */; };
 		EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */; };
 		EAFD01C22CD1B3F200DDD0D3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		EA5683822CD0FF1C006C74FA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Thin.otf"; sourceTree = "<absolute>"; };
 		EA56838C2CD10211006C74FA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA5683912CD11CE6006C74FA /* oeCookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oeCookButton.swift; sourceTree = "<group>"; };
+		EAC20EB32CD1B95200C9C293 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +162,7 @@
 		EA5682972CD0BFE0006C74FA /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EAC20EB12CD1B93F00C9C293 /* RecipeFeature */,
 				EAFD01BF2CD1B3DB00DDD0D3 /* TabBarFeature */,
 				EA5682BF2CD0F2F9006C74FA /* SignUpFeature */,
 				EA5682BE2CD0D6F1006C74FA /* TestFeature */,
@@ -260,6 +263,22 @@
 				EA5683912CD11CE6006C74FA /* oeCookButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		EAC20EB12CD1B93F00C9C293 /* RecipeFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EAC20EB22CD1B94600C9C293 /* Sources */,
+			);
+			path = RecipeFeature;
+			sourceTree = "<group>";
+		};
+		EAC20EB22CD1B94600C9C293 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC20EB32CD1B95200C9C293 /* RecipeView.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		EAFD01BF2CD1B3DB00DDD0D3 /* TabBarFeature */ = {
@@ -429,6 +448,7 @@
 				EA5682682CD0BEB3006C74FA /* oeCookApp.swift in Sources */,
 				EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */,
 				EA5682C22CD0F30B006C74FA /* SignUpView.swift in Sources */,
+				EAC20EB42CD1B95200C9C293 /* RecipeView.swift in Sources */,
 				EA56829D2CD0C04E006C74FA /* oeCookTextField.swift in Sources */,
 				EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */,
 				EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */,
