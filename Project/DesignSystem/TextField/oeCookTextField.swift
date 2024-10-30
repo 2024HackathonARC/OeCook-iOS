@@ -15,6 +15,7 @@ struct oeCookTextField: View {
     var errorText: String
     var isError: Bool
     var isDisabled: Bool
+    var isSecure: Bool
     var onSubmit: () -> Void
 
     private var borderColor: Color {
@@ -32,6 +33,7 @@ struct oeCookTextField: View {
         errorText: String = "",
         isError: Bool = false,
         isDisabled: Bool = false,
+        isSecure: Bool = false,
         onSubmit: @escaping () -> Void = {}
     ) {
         self._text = text
@@ -40,8 +42,11 @@ struct oeCookTextField: View {
         self.errorText = errorText
         self.isError = isError
         self.isDisabled = isDisabled
+        self.isSecure = isSecure
         self.onSubmit = onSubmit
     }
+
+    @State private var eyesState: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -50,24 +55,31 @@ struct oeCookTextField: View {
                     .oeCook(.semibold, size: 16)
                     .oeCookColor(.black)
             }
-
-            TextField(placeholder, text: $text)
-                .padding(.horizontal, 16)
-                .frame(height: 44)
-                .onSubmit(onSubmit)
-                .focused($isFocused)
+            ZStack {
+                TextField(placeholder, text: $text)
+                    .padding(.horizontal, 16)
+                    .frame(height: 44)
+                    .onSubmit(onSubmit)
+                    .focused($isFocused)
                 //.expoColor(ExpoColor.black)
-                .disabled(isDisabled)
-                .oeCook(.regular, size: 14)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 8)
-                        .strokeBorder(borderColor)
+                    .disabled(isDisabled)
+                    .oeCook(.regular, size: 14)
+                    .textContentType(isSecure ? .password : .none)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 8)
+                            .strokeBorder(borderColor)
+                    }
+                    .cornerRadius(8)
+                    .onTapGesture {
+                        if !isDisabled { isFocused = true }
+                    }
+                    .padding(.top, 7)
+                if isSecure {
+                    Image(systemName: eyesState ? "eyes" : "eyes.inverse")
+                        .padding(.leading, 310)
+                        .padding(.top, 3)
                 }
-                .cornerRadius(8)
-                .onTapGesture {
-                    if !isDisabled { isFocused = true }
-                }
-                .padding(.top, 7)
+            }
 
             if isError {
                 Text(errorText)

@@ -22,6 +22,7 @@ struct SignUpView: View {
     @State var allergyStatus = [Bool](repeating: false, count: 8)
     @State private var isActive = false
     @State private var selectedStudent = ""
+    @State private var showingAlert = false
 
     var body: some View {
         NavigationStack {
@@ -101,25 +102,32 @@ struct SignUpView: View {
                     .padding(.leading, 16)
                     .padding(.top, 20)
 
-                HStack(spacing: 20) {
+                HStack(spacing: 15) {
                     allergy(text: "육류", isSelected: $allergyStatus[0])
                     allergy(text: "견과류", isSelected: $allergyStatus[1])
                     allergy(text: "유제품", isSelected: $allergyStatus[2])
+                    allergy(text: "혜산물", isSelected: $allergyStatus[3])
                 }
                 .padding(.top, 10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 16)
 
-                HStack(spacing: 20) {
-                    allergy(text: "혜산물", isSelected: $allergyStatus[3])
+                HStack(spacing: 15) {
                     allergy(text: "계란", isSelected: $allergyStatus[4])
                     allergy(text: "밀가루", isSelected: $allergyStatus[5])
-                }
-                .padding(.top, 10)
-
-                HStack(spacing: 20) {
                     allergy(text: "과일", isSelected: $allergyStatus[6])
                     allergy(text: "기타", isSelected: $allergyStatus[7])
                 }
                 .padding(.top, 10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 16)
+
+
+//                HStack(spacing: 20) {
+//                    allergy(text: "과일", isSelected: $allergyStatus[6])
+//                    allergy(text: "기타", isSelected: $allergyStatus[7])
+//                }
+//                .padding(.top, 10)
 
 
                 Text("비건이신가요?")
@@ -211,6 +219,10 @@ struct SignUpView: View {
                 }
                 .presentationDetents([.height(180)])  // sheet의 높이를 조절
             }
+            .alert(isPresented: $showingAlert) {
+                       Alert(title: Text("서근 개발블로그"), message: nil,
+                             dismissButton: .default(Text("구독")))
+                   }
         }
         }
     }
@@ -221,14 +233,15 @@ func allergy(
     text: String,
     isSelected: Binding<Bool>
 ) -> some View {
-    RoundedRectangle(cornerRadius: 6)
-        .foregroundStyle(isSelected.wrappedValue ? .gray300 : .gray100)
-        .frame(width: 110, height: 35)
+    Text(text)
+        .oeCook(.medium, size: 14)
+        .foregroundStyle(isSelected.wrappedValue ? .red : .gray300)
+        .padding(.vertical, 4)
+        .padding(.horizontal, 18)
         .overlay(
-            Text(text)
-                .oeCook(.medium, size: 12)
-        )
-
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(isSelected.wrappedValue ? .red : .gray300, lineWidth: 1.3)
+            )
         .onTapGesture {
             isSelected.wrappedValue.toggle()
         }

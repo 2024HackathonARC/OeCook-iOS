@@ -37,6 +37,7 @@ struct SignInView: View {
                     title: "비밀번호",
                     errorText: "비밀번호를 잘못 입력했습니다.",
                     isError: showError,
+                    isSecure: true,
                     onSubmit: {
                         if viewModel.passwordTextField.isEmpty {
                             showError = true

@@ -32,7 +32,7 @@ struct MyWebViewContainer: View {
 
     var body: some View {
         MyWebView(urlToLoad: urlToLoad)
-            .navigationBarBackButtonHidden(true) // Hide the back button
+            .navigationBarBackButtonHidden(true)
     }
 }
 
