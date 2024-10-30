@@ -35,3 +35,7 @@ struct MyWebViewContainer: View {
             .navigationBarBackButtonHidden(true) // Hide the back button
     }
 }
+
+#Preview {
+    MyWebViewContainer(urlToLoad: "https://www.google.com")
+}

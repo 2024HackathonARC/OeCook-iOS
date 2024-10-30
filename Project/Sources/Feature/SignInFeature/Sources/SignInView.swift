@@ -77,7 +77,8 @@ struct SignInView: View {
                     self.isActiveSignin.toggle()
                 }
                 .navigationDestination(isPresented: $isActiveSignin) {
-                    WebViewTestView()
+                    TabBarView()
+                        .navigationBarBackButtonHidden(true)
                 }
                 .padding(.top, 152)
 

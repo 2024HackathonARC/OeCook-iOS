@@ -12,14 +12,16 @@ struct TabBarView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            WebViewTestView()
+            MyWebView(urlToLoad: "https://github.com/xixn2/")
+                .navigationBarBackButtonHidden(true)
                 .tabItem {
                     Image(selectedTab == 1 ? "onHouse" : "offHouse")
                     Text("메인")
                 }
                 .tag(1)
 
-            WebViewTestView()
+            MyWebView(urlToLoad: "https://google.com")
+                .navigationBarBackButtonHidden(true)
                 .tabItem {
                     Image(selectedTab == 2 ? "onOffice" : "offOffice")
                     Text("기업")

@@ -10,7 +10,10 @@ import SwiftUI
 struct WebViewTestView: View {
     var body: some View {
         NavigationStack {
-            NavigationLink(destination: MyWebView(urlToLoad: "https://google.com")) {
+            NavigationLink(destination:
+                MyWebView(urlToLoad: "https://google.com")
+                    .navigationBarBackButtonHidden(true)  // 여기에 추가
+            ) {
                 Text("Dotori")
                     .padding()
                     .background(Color.green)
