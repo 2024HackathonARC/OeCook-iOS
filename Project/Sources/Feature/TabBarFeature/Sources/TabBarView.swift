@@ -12,7 +12,7 @@ struct TabBarView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            MyWebView(urlToLoad: "https://github.com/xixn2/")
+            MyWebView(urlToLoad: "https://oecook.netlify.app/")
                 .navigationBarBackButtonHidden(true)
                 .tabItem {
                     Image(selectedTab == 1 ? "onHouse" : "offHouse")
@@ -20,7 +20,7 @@ struct TabBarView: View {
                 }
                 .tag(1)
 
-            MyWebView(urlToLoad: "https://google.com")
+            MyWebView(urlToLoad: "https://oecook.netlify.app/brand")
                 .navigationBarBackButtonHidden(true)
                 .tabItem {
                     Image(selectedTab == 2 ? "onOffice" : "offOffice")
@@ -28,7 +28,7 @@ struct TabBarView: View {
                 }
                 .tag(2)
 
-            WebViewTestView()
+            RecipeView(viewModel: RecipeViewModel(), selectedTab: $selectedTab)
                 .tabItem {
                     Image(selectedTab == 3 ? "onBook" : "offBook")
                     Text("레시피")

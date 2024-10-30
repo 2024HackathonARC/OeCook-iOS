@@ -27,7 +27,14 @@
 		EA56838B2CD0FF1C006C74FA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA56837B2CD0FF1C006C74FA /* Pretendard-Bold.otf */; };
 		EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA56838C2CD10211006C74FA /* SignUpViewModel.swift */; };
 		EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5683912CD11CE6006C74FA /* oeCookButton.swift */; };
-		EAC20EB42CD1B95200C9C293 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC20EB32CD1B95200C9C293 /* RecipeView.swift */; };
+		EAADBA5C2CD1FDE2005CE014 /* oeCookSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADBA5B2CD1FDD4005CE014 /* oeCookSecureField.swift */; };
+		EAADBA672CD22B3A005CE014 /* RecipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADBA662CD22B36005CE014 /* RecipeAPI.swift */; };
+		EAADBA6B2CD22B59005CE014 /* RecipeReqeust.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADBA6A2CD22B51005CE014 /* RecipeReqeust.swift */; };
+		EAADBA6F2CD22CF8005CE014 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EAADBA6E2CD22CF8005CE014 /* Moya */; };
+		EAADBA722CD22D15005CE014 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADBA712CD22D10005CE014 /* RecipeViewModel.swift */; };
+		EAADBA782CD24A6B005CE014 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADBA772CD24A62005CE014 /* RecipeView.swift */; };
+		EAADBA7A2CD27BB2005CE014 /* RecipeImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADBA792CD27BAE005CE014 /* RecipeImageRequest.swift */; };
+		EAC20EB72CD1EB2900C9C293 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC20EB62CD1EB2200C9C293 /* ImagePicker.swift */; };
 		EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */; };
 		EAFD01C22CD1B3F200DDD0D3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +81,13 @@
 		EA5683822CD0FF1C006C74FA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 3/public/static/Pretendard-Thin.otf"; sourceTree = "<absolute>"; };
 		EA56838C2CD10211006C74FA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA5683912CD11CE6006C74FA /* oeCookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oeCookButton.swift; sourceTree = "<group>"; };
-		EAC20EB32CD1B95200C9C293 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		EAADBA5B2CD1FDD4005CE014 /* oeCookSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oeCookSecureField.swift; sourceTree = "<group>"; };
+		EAADBA662CD22B36005CE014 /* RecipeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPI.swift; sourceTree = "<group>"; };
+		EAADBA6A2CD22B51005CE014 /* RecipeReqeust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeReqeust.swift; sourceTree = "<group>"; };
+		EAADBA712CD22D10005CE014 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		EAADBA772CD24A62005CE014 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		EAADBA792CD27BAE005CE014 /* RecipeImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImageRequest.swift; sourceTree = "<group>"; };
+		EAC20EB62CD1EB2200C9C293 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAADBA6F2CD22CF8005CE014 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +159,7 @@
 		EA5682952CD0BFAA006C74FA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EAADBA612CD22AEA005CE014 /* Domain */,
 				EA5682972CD0BFE0006C74FA /* Feature */,
 				EA5682962CD0BFCE006C74FA /* Application */,
 			);
@@ -174,6 +189,7 @@
 		EA5682982CD0BFE9006C74FA /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				EAC20EB52CD1EB1800C9C293 /* ImagePicker */,
 				EA56838E2CD11CD2006C74FA /* Button */,
 				EA5682B12CD0C85B006C74FA /* DesignModifire */,
 				EA56829A2CD0C02E006C74FA /* TextField */,
@@ -184,6 +200,7 @@
 		EA56829A2CD0C02E006C74FA /* TextField */ = {
 			isa = PBXGroup;
 			children = (
+				EAADBA5B2CD1FDD4005CE014 /* oeCookSecureField.swift */,
 				EA56829C2CD0C048006C74FA /* oeCookTextField.swift */,
 			);
 			path = TextField;
@@ -265,6 +282,41 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		EAADBA612CD22AEA005CE014 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EAADBA702CD22D0A005CE014 /* ViewModel */,
+				EAADBA632CD22AFC005CE014 /* Request */,
+				EAADBA622CD22AF1005CE014 /* API */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EAADBA622CD22AF1005CE014 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EAADBA662CD22B36005CE014 /* RecipeAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EAADBA632CD22AFC005CE014 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EAADBA792CD27BAE005CE014 /* RecipeImageRequest.swift */,
+				EAADBA6A2CD22B51005CE014 /* RecipeReqeust.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EAADBA702CD22D0A005CE014 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAADBA712CD22D10005CE014 /* RecipeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EAC20EB12CD1B93F00C9C293 /* RecipeFeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,9 +328,17 @@
 		EAC20EB22CD1B94600C9C293 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EAC20EB32CD1B95200C9C293 /* RecipeView.swift */,
+				EAADBA772CD24A62005CE014 /* RecipeView.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		EAC20EB52CD1EB1800C9C293 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EAC20EB62CD1EB2200C9C293 /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		EAFD01BF2CD1B3DB00DDD0D3 /* TabBarFeature */ = {
@@ -314,6 +374,7 @@
 			);
 			name = oeCook;
 			packageProductDependencies = (
+				EAADBA6E2CD22CF8005CE014 /* Moya */,
 			);
 			productName = oeCook;
 			productReference = EA5682642CD0BEB3006C74FA /* oeCook.app */;
@@ -391,6 +452,9 @@
 			);
 			mainGroup = EA56825B2CD0BEB3006C74FA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EAADBA6D2CD22CF8005CE014 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA5682652CD0BEB3006C74FA /* Products */;
 			projectDirPath = "";
@@ -442,15 +506,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAADBA672CD22B3A005CE014 /* RecipeAPI.swift in Sources */,
+				EAADBA722CD22D15005CE014 /* RecipeViewModel.swift in Sources */,
 				EA5682B52CD0C939006C74FA /* DesignTestView.swift in Sources */,
+				EAADBA7A2CD27BB2005CE014 /* RecipeImageRequest.swift in Sources */,
 				EA5682BD2CD0D6EB006C74FA /* SignInView.swift in Sources */,
+				EAADBA6B2CD22B59005CE014 /* RecipeReqeust.swift in Sources */,
 				EA5682B92CD0CF0C006C74FA /* MyWebView.swift in Sources */,
 				EA5682682CD0BEB3006C74FA /* oeCookApp.swift in Sources */,
 				EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */,
 				EA5682C22CD0F30B006C74FA /* SignUpView.swift in Sources */,
-				EAC20EB42CD1B95200C9C293 /* RecipeView.swift in Sources */,
 				EA56829D2CD0C04E006C74FA /* oeCookTextField.swift in Sources */,
+				EAADBA782CD24A6B005CE014 /* RecipeView.swift in Sources */,
 				EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */,
+				EAC20EB72CD1EB2900C9C293 /* ImagePicker.swift in Sources */,
+				EAADBA5C2CD1FDE2005CE014 /* oeCookSecureField.swift in Sources */,
 				EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */,
 				EA5682B72CD0CECE006C74FA /* WebViewTestView.swift in Sources */,
 				EAFD01C22CD1B3F200DDD0D3 /* TabBarView.swift in Sources */,
@@ -779,6 +849,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAADBA6D2CD22CF8005CE014 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAADBA6E2CD22CF8005CE014 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAADBA6D2CD22CF8005CE014 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA56825C2CD0BEB3006C74FA /* Project object */;
 }

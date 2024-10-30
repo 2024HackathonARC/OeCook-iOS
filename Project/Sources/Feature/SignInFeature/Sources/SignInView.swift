@@ -13,6 +13,7 @@ struct SignInView: View {
     @State private var showError: Bool = false
     @State private var isActiveSignup = false
     @State private var isActiveSignin = false
+    @State private var isSecure = true
 
     var body: some View {
         NavigationStack {
@@ -37,7 +38,9 @@ struct SignInView: View {
                     title: "비밀번호",
                     errorText: "비밀번호를 잘못 입력했습니다.",
                     isError: showError,
-                    isSecure: true,
+                    eyesState: true,
+                    isDisabled: false,
+                    isSecure: $isSecure,
                     onSubmit: {
                         if viewModel.passwordTextField.isEmpty {
                             showError = true

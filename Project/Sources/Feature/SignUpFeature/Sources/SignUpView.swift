@@ -21,8 +21,9 @@ struct SignUpView: View {
     @State private var xButton2 = false
     @State var allergyStatus = [Bool](repeating: false, count: 8)
     @State private var isActive = false
-    @State private var selectedStudent = ""
     @State private var showingAlert = false
+    @State private var isSecure = true
+    @State private var bgTextField: String = ""
 
     var body: some View {
         NavigationStack {
@@ -51,7 +52,19 @@ struct SignUpView: View {
                 oeCookTextField(
                     "(8~24자 영어(대소문자)/숫자 특수문자 1개이상)",
                     text: $viewModel.passwordTextField,
-                    title: "비밀번호"
+                    title: "비밀번호",
+                    errorText: "비밀번호를 잘못 입력했습니다.",
+                    isError: showError,
+                    eyesState: true,
+                    isDisabled: false,
+                    isSecure: $isSecure,
+                    onSubmit: {
+                        if viewModel.passwordTextField.isEmpty {
+                            showError = true
+                        } else {
+                            showError = false
+                        }
+                    }
                 )
                 .padding(.top, 20)
 
@@ -60,6 +73,9 @@ struct SignUpView: View {
                     text: $viewModel.passwordCheckTextField,
                     errorText: "비밀번호를 잘못 입력했습니다.",
                     isError: showError,
+                    eyesState: true,
+                    isDisabled: false,
+                    isSecure: $isSecure,
                     onSubmit: {
                         if viewModel.passwordCheckTextField.isEmpty {
                             showError = true
@@ -153,6 +169,12 @@ struct SignUpView: View {
                 }
                 .padding(.top, 10)
 
+                oeCookTextField(
+                    "비건 상세정보를 입력해주세요.",
+                    text: $bgTextField
+                )
+                .padding(.top, 10)
+
                 Text("할랄 인증이 필요하신가요?")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .oeCook(.semibold, size: 16)
@@ -219,10 +241,10 @@ struct SignUpView: View {
                 }
                 .presentationDetents([.height(180)])  // sheet의 높이를 조절
             }
-            .alert(isPresented: $showingAlert) {
-                       Alert(title: Text("서근 개발블로그"), message: nil,
-                             dismissButton: .default(Text("구독")))
-                   }
+//            .alert(isPresented: $showingAlert) {
+//                       Alert(title: Text("서근 개발블로그"), message: nil,
+//                             dismissButton: .default(Text("구독")))
+//                   }
         }
         }
     }
