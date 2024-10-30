@@ -28,6 +28,7 @@
 		EA56838D2CD10218006C74FA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA56838C2CD10211006C74FA /* SignUpViewModel.swift */; };
 		EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5683912CD11CE6006C74FA /* oeCookButton.swift */; };
 		EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */; };
+		EAFD01C22CD1B3F200DDD0D3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EA56838C2CD10211006C74FA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA5683912CD11CE6006C74FA /* oeCookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oeCookButton.swift; sourceTree = "<group>"; };
 		EAFD01BD2CD1498200DDD0D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		EA5682972CD0BFE0006C74FA /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EAFD01BF2CD1B3DB00DDD0D3 /* TabBarFeature */,
 				EA5682BF2CD0F2F9006C74FA /* SignUpFeature */,
 				EA5682BE2CD0D6F1006C74FA /* TestFeature */,
 				EA5682BA2CD0D6D6006C74FA /* SignInFeature */,
@@ -257,6 +260,22 @@
 				EA5683912CD11CE6006C74FA /* oeCookButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		EAFD01BF2CD1B3DB00DDD0D3 /* TabBarFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD01C02CD1B3E300DDD0D3 /* Sources */,
+			);
+			path = TabBarFeature;
+			sourceTree = "<group>";
+		};
+		EAFD01C02CD1B3E300DDD0D3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD01C12CD1B3F200DDD0D3 /* TabBarView.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +433,7 @@
 				EA5683922CD11CEB006C74FA /* oeCookButton.swift in Sources */,
 				EAFD01BE2CD1498200DDD0D3 /* SignInViewModel.swift in Sources */,
 				EA5682B72CD0CECE006C74FA /* WebViewTestView.swift in Sources */,
+				EAFD01C22CD1B3F200DDD0D3 /* TabBarView.swift in Sources */,
 				EA5682B32CD0C869006C74FA /* DesignModifire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

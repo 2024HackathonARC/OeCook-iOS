@@ -48,7 +48,7 @@ struct SignInView: View {
                 .padding(.top, 20)
 
                 HStack(spacing: 0) {
-                    Text("아직 관리자 로그인을 안 하셨나요?")
+                    Text("아직 로그인을 안 하셨나요?")
                         .oeCook(.regular, size: 12)
                         .foregroundStyle(.gray300)
 
