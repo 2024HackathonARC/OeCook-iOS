@@ -173,7 +173,7 @@ struct RecipeView: View {
             //                .padding(.top, 10)
 
 
-            Text("비건이신가요?")
+            Text("비건 푸드인가요?")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .oeCook(.semibold, size: 16)
                 .padding(.leading, 16)
@@ -298,8 +298,8 @@ struct RecipeView: View {
         }
         .alert(isPresented: $showingAlert) {
             Alert(
-                title: Text("서근 개발 블로그"),
-                message: Text("열심히 하겠습니다."),
+                title: Text("게시물 업로드"),
+                message: Text("업로드 하시겠습니까?"),
                 primaryButton: .default(Text("완료"), action: {
                     viewModel.setupCompanyName(companyName: companyTextField)
                     viewModel.setupMenu(menu: menuTextField)
